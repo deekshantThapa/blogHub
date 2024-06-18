@@ -43,30 +43,6 @@
 }
 
 @media only screen and (max-width: 575px){
-    .site-branding {
-        width: 150px;
-    }
-
-    .hgroup-right {
-        width: 66%;
-        width: calc(100% - 150px);
-        width: -webkit-calc(100% - 150px);
-    }
-
-    .hgroup-content-wrap{
-        padding: 15px 0;
-    }
-
-    .site-footer .widget-area{
-        grid-template-columns: calc(30% - 10px) calc(70% - 10px);
-    }
-
-    .about-us-content .entry-title {
-        margin-bottom: 20px;
-    }
-}
-
-@media only screen and (max-width: 479px){
 
     body, input[type="text"], input[type="password"], input[type="number"], input[type="email"], input[type="tel"], input[type="url"], input[type="search"], textarea, select{
         font-size: 14px;
