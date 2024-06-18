@@ -1,0 +1,122 @@
+@media only screen and (max-width: 767px){
+    .hgroup-wrap{
+        margin-bottom: 20px;
+    }
+
+    .site-branding a{
+        font-size: 22px;
+    }
+
+    .blog .entry-title {
+        font-size: 20px;
+    }
+
+    .blog-list-wrap .blog {
+        margin-bottom: 30px;
+    }
+
+    h1, h2, h3, h4, h5, h6{
+        margin-bottom: 8px;
+    }
+
+    p, li {
+        margin-bottom: 15px;
+    }
+
+    .site-footer .widget-area{
+        padding: 20px 0;
+        gap: 20px;
+        grid-template-columns: calc(40% - 10px) calc(60% - 10px);
+    }
+
+    input[type="text"], input[type="password"], input[type="number"], input[type="email"], input[type="tel"], input[type="url"], input[type="search"], textarea, select{
+        padding: 8px 10px;
+    }
+
+    .contact-section .heading-wrap {
+        margin-bottom: 30px;
+    }
+
+    .contact-form .input-wrap {
+        padding-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 575px){
+    .site-branding {
+        width: 150px;
+    }
+
+    .hgroup-right {
+        width: 66%;
+        width: calc(100% - 150px);
+        width: -webkit-calc(100% - 150px);
+    }
+
+    .hgroup-content-wrap{
+        padding: 15px 0;
+    }
+
+    .site-footer .widget-area{
+        grid-template-columns: calc(30% - 10px) calc(70% - 10px);
+    }
+
+    .about-us-content .entry-title {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 479px){
+
+    body, input[type="text"], input[type="password"], input[type="number"], input[type="email"], input[type="tel"], input[type="url"], input[type="search"], textarea, select{
+        font-size: 14px;
+    }
+
+    .site-branding a {
+        font-size: 20px;
+    }
+
+    .site-branding {
+        width: 90px;
+    }
+
+    .hgroup-wrap {
+        margin-bottom: 10px;
+    }
+
+    .hgroup-right {
+        width: 68%;
+        width: calc(100% - 90px);
+        width: -webkit-calc(100% - 90px);
+    }
+
+    .menu-top-menu-container>ul>li {
+        margin: 0 8px;
+    }
+
+    .menu-top-menu-container>ul>li>a{
+        font-size: 14px;
+    }
+
+    .blog .entry-title {
+        font-size: 18px;
+    }
+
+    h2, h3, h4{
+        font-size: 18px;
+    }
+
+    h5{
+        font-size: 16px;
+    }
+
+    .site-footer .widget-area {
+        grid-template-columns: 100%;
+        gap: 10px;
+    }
+
+    .go-back-btn{
+        padding: 6px 8px 6px 30px;
+        background-size: 14px;
+    }
+}

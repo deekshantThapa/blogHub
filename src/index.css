@@ -1,0 +1,497 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+span,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  border: 0;
+  font-family: inherit;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+html {
+  font-size: 62.5%;
+  /* Corrects text resizing ospanly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 */
+  overflow-y: scroll;
+  /* Keeps page centered in all browsers regardless of content height */
+  -webkit-text-size-adjust: 100%;
+  /* Prevents iOS text size adjust after orientation change, without disabling user zoom */
+  -ms-text-size-adjust: 100%;
+  /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
+  box-sizing: border-box;
+  /* Apply a natural box layout model to the document; see http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+  box-sizing: inherit;
+}
+
+:root {
+  --primary: #222222;
+  --secondary: #555555;
+  --gray: #979797;
+  --medium-gray: #EAEAEE;
+  --light-gray: #F5F5F7;
+  --purple: #7247CA;
+  --purple-shade: #58379B;
+  --white: #FFFF;
+  --red: #FF3636;
+  --source-serif-font: "Source Serif 4", serif;
+}
+
+body {
+  background: var(--white);
+  color: var(--secondary);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.3;
+  font-family: var(--source-serif-font);
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--primary);
+  line-height: 1.2;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+p,
+li {
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+ul li{
+  list-style: none;
+}
+
+a{
+  display: inline-block;
+  text-decoration: none;
+  transition: all 0.2s linear 0s;
+  color: var(--secondary);
+}
+
+a:hover{
+  color: var(--purple);
+}
+
+button{
+  padding: 8px 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: var(--source-serif-font);
+  background: var(--white);
+  border: 1px solid var(--light-red);
+  transition: all 0.2s linear 0s;
+  cursor: pointer;
+  display: block;
+  margin-bottom: 10px;
+}
+
+button:hover{
+  background: var(--light-red);
+  color: var(--white);
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="email"],
+input[type="tel"],
+input[type="url"],
+input[type="search"],
+textarea,
+select{
+  font-family: var(--source-serif-font);
+  border-radius: 5px;
+  padding: 10px 12px;
+  font-size: 16px;
+  background-color: var(--light-gray);
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus,
+input[type="url"]:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+}
+
+input[type="submit"]{
+  cursor: pointer;
+  background-color: var(--purple);
+  border-radius: 5px;
+  border: none;
+  color: var(--white);
+  padding: 10px 16px;
+  transition: all 0.2s linear 0s;
+}
+
+input[type="submit"]:hover{
+  background-color: var(--purple-shade);
+}
+
+textarea {
+  resize: vertical;
+  padding: 15px;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+figure{
+  margin: 0 auto 15px auto;
+  line-height: 0;
+  position: relative;
+}
+
+/* Reusable style */
+
+.container-lg, .container-sm{
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.container-lg {
+  max-width: 1170px;
+}
+
+.container-sm {
+  max-width: 800px;
+}
+
+section {
+  padding: 20px 0;
+}
+
+.featured-image{
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* header styling start */
+
+.hgroup-wrap {
+  border-bottom: 1px solid var(--medium-gray);
+  margin-bottom: 40px;
+}
+
+.hgroup-content-wrap {
+  padding: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.site-branding {
+  width: 230px;
+}
+
+.site-branding a {
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.hgroup-right {
+  width: calc(100% - 230px);
+  width: -webkit-calc(100% - 230px);
+  padding-left: 15px;
+}
+
+.menu-top-menu-container ul li{
+  margin-bottom: 0;
+}
+
+.menu-top-menu-container>ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.menu-top-menu-container>ul>li{
+  margin: 0 20px;
+}
+
+.menu-top-menu-container>ul>li:first-child{
+  margin-left: 0;
+}
+
+.menu-top-menu-container>ul>li:last-child{
+  margin-right: 0;
+}
+
+.menu-top-menu-container>ul>li>a{
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+/* header styling end */
+
+.loading-blogs-msg, .error-msg{
+  font-size: 20px;
+}
+
+.blog-list-wrap .blog {
+  margin-bottom: 50px;
+}
+
+.blog .entry-title {
+  font-size: 22px;
+}
+
+.blog .blog-tags span{
+  color: var(--gray);
+  padding: 0 8px;
+  display: inline-block;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.blog .blog-tags span:not(:last-child):before{
+  position: absolute;
+  content: '|';
+  top: 0;
+  right: -2px;
+}
+
+.blog .blog-tags span:first-child{
+  padding-left: 0;
+}
+
+.blog .blog-tags span:last-child{
+  padding-right: 0;
+}
+
+.blog p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.blog .read-more{
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--purple);
+  position: relative;
+}
+
+.blog .read-more::before{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: var(--purple);
+    transition: all 0.2s linear 0s;
+}
+
+.blog .read-more:hover::before{
+  width: 100%;
+}
+
+.go-back-btn{
+  padding: 8px 10px 8px 35px;
+  background-color: var(--gray);
+  border-radius: 5px;
+  color: var(--white);
+  background-image: url(./assets/img/arrow-left.png);
+  background-repeat: no-repeat;
+  background-position: 8px center;
+  margin-bottom: 15px;
+}
+
+.go-back-btn:hover{
+  color: var(--white);
+  background-color: var(--secondary);
+}
+
+/* footer start */
+
+.site-footer .widget-area {
+  padding: 40px 0;
+  display: grid;
+  gap: 40px;
+  grid-template-columns: calc(50% - 20px) calc(50% - 20px);
+  border-top: 1px solid var(--medium-gray);
+}
+
+.site-footer .widget a {
+  font-weight: 500;
+}
+
+.newsletter .heading-wrap {
+  margin-bottom: 15px;
+}
+
+.newsletter .entry-title {
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+.newsletter .input-wrap{
+  position: relative;
+}
+
+.newsletter input[type="email"] {
+  padding-right: 50px;
+}
+
+.newsletter input[type="submit"] {
+  width: 40px;
+  height: 100%;
+  border: none;
+  position: absolute;
+  top: 0;
+  right: 0px;
+  background-image: url(./assets/img/right-arrow.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 22px;
+}
+
+/* footer end */
+
+/* contact section start */
+
+.contact-section .heading-wrap {
+  margin-bottom: 40px;
+}
+
+.contact-form .input-wrap{
+  padding-bottom: 20px;
+}
+
+.contact-form .input-wrap label, .contact-form .input-wrap input{
+  margin-bottom: 10px;
+}
+
+.contact-form .input-wrap label {
+  display: block;
+}
+
+/* contact section end */
+
+/* about section start */
+
+.about-us-content .entry-title {
+  margin-bottom: 30px;
+}
+
+/* about section end */
