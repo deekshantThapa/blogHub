@@ -1,6 +1,6 @@
 @media only screen and (max-width: 767px){
     .hgroup-wrap{
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
 
     .site-branding a{
@@ -54,10 +54,6 @@
 
     .site-branding {
         width: 90px;
-    }
-
-    .hgroup-wrap {
-        margin-bottom: 10px;
     }
 
     .hgroup-right {
