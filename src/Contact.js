@@ -10,15 +10,15 @@ function Contact(){
                     <form action="">
                         <div className="input-wrap">
                             <label htmlFor="">Name*</label>
-                            <input type="text" name="" id="" placeholder="Enter your name" />
+                            <input type="text" name="" id="" placeholder="Enter your name" required/>
                         </div>
                         <div className="input-wrap">
                             <label htmlFor="">Email*</label>
-                            <input type="email" name="" id="" placeholder="Enter your email" />
+                            <input type="email" name="" id="" placeholder="Enter your email" required/>
                         </div>
                         <div className="input-wrap">
                             <label htmlFor="">Message*</label>
-                            <textarea name="" id="" cols="30" rows="5" placeholder="Enter your message"></textarea>
+                            <textarea name="" id="" cols="30" rows="5" placeholder="Enter your message" required></textarea>
                         </div>
                         <input type="submit" value="Submit" />
                     </form>
