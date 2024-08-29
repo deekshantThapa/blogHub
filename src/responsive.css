@@ -1,6 +1,12 @@
+@media only screen and (max-width: 992px){
+    h2 {
+        font-size: 24px;
+    }
+}
+
 @media only screen and (max-width: 767px){
     .hgroup-wrap{
-        margin-bottom: 10px;
+        margin-bottom: 0;
     }
 
     .site-branding a{
@@ -15,8 +21,12 @@
         margin-bottom: 30px;
     }
 
-    h1, h2, h3, h4, h5, h6{
+    h1, h2, h3, h4, h5, h6, .entry-header.heading .entry-title{
         margin-bottom: 8px;
+    }
+
+    .entry-header.heading{
+        margin-bottom: 20px;
     }
 
     p, li {
@@ -80,6 +90,10 @@
 
     h5{
         font-size: 16px;
+    }
+
+    .entry-header .entry-title{
+        font-size: 22px;
     }
 
     .site-footer .widget-area {

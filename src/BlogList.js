@@ -8,6 +8,9 @@ function BlogList(){
     return(
         <section className="all-blogs">
             <div className="container">
+                <header className="entry-header">
+                    <h2 className="entry-title">Welcome to blog site</h2>
+                </header>
                 <div className="blog-list-wrap">
                     {isLoading && <p className="loading-blogs-msg">Fetching blogs...</p>}
                     {error && <p className="error-msg">{error}</p>}

@@ -12,10 +12,10 @@ function Footer(){
                         </ul>
                     </aside>
                     <div className="newsletter">
-                        <div className="heading-wrap">
+                        <header className="entry-header heading">
                             <h5 className="entry-title">Newsletter</h5>
                             <span>Sign up now; get closer to our action.</span>
-                        </div>
+                        </header>
                         <div className="input-wrap">
                             <input type="email" name="" id="" />
                             <input type="submit" value="" />

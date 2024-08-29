@@ -2,8 +2,8 @@ function Contact(){
     return(
         <section className="contact-section">
             <div className="container">
-                <div className="heading-wrap">
-                    <h3 className="entry-title">Contact</h3>
+                <div className="entry-header heading">
+                    <h2 className="entry-title">Contact</h2>
                     <span>Love to hear your thoughts, fears & feelings...</span>
                 </div>
                 <div className="contact-form">
