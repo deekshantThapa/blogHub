@@ -9,26 +9,24 @@ import About from "./About";
 function App() {
   return (
     <Router>
-    <div className="app">
-      <Header/>
-      <div className="content">
-      <Switch>
-        <Route exact path="/">
-        <Home/>
-        </Route>
-        <Route exact path='/blogs/:id'>
-          <BlogDetail/>
-        </Route>
-        <Route exact path='/about'>
-          <About/>
-        </Route>
-        <Route exact path='/contact'>
-          <Contact/>
-        </Route>
-      </Switch>
-      </div>
-      <Footer/>
-    </div>
+      <Header />
+      <main>
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route exact path='/blogs/:id'>
+            <BlogDetail />
+          </Route>
+          <Route exact path='/about'>
+            <About />
+          </Route>
+          <Route exact path='/contact'>
+            <Contact />
+          </Route>
+        </Switch>
+      </main>
+      <Footer />
     </Router>
   );
 }

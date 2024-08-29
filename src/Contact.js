@@ -1,7 +1,7 @@
 function Contact(){
     return(
         <section className="contact-section">
-            <div className="container-sm">
+            <div className="container">
                 <div className="heading-wrap">
                     <h3 className="entry-title">Contact</h3>
                     <span>Love to hear your thoughts, fears & feelings...</span>

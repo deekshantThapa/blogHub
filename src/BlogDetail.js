@@ -6,7 +6,7 @@ function BlogDetail() {
     const { dataContent: blog, isLoading, error } = useFetch('https://dummyjson.com/posts/' + id);
     return (
         <section className="blog-detail-section">
-            <div className="container-sm">
+            <div className="container">
                 <Link to='/' className="go-back-btn">Back</Link>
                 <div className="blog-detail-content">
                     {isLoading && <p className="loading-blogs-msg">Fetching the blog...</p>}

@@ -7,7 +7,7 @@ function BlogList(){
 
     return(
         <section className="all-blogs">
-            <div className="container-sm">
+            <div className="container">
                 <div className="blog-list-wrap">
                     {isLoading && <p className="loading-blogs-msg">Fetching blogs...</p>}
                     {error && <p className="error-msg">{error}</p>}

@@ -4,7 +4,7 @@ function Header(){
     return(
         <header>
             <div className="hgroup-wrap">
-                <div className="container-lg">
+                <div className="container">
                     <div className="hgroup-content-wrap">
                         <div className="site-branding">
                             <Link to='/'>Blog Hub</Link>

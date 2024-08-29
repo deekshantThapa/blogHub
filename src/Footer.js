@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function Footer(){
     return(
         <footer className="site-footer">
-            <div className="container-sm">
+            <div className="container">
                 <div className="widget-area">
                     <aside className="widget">
                         <ul>
