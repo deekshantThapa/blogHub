@@ -8,7 +8,7 @@ import About from "./About";
 
 function App() {
   return (
-    <Router basename="/Blog-Hub">
+    <Router basename="/blogHub">
       <Header />
       <main>
         <Switch>
